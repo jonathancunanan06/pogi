@@ -1,4 +1,5 @@
-import { Text, View , StyleSheet } from "react-native";
+import { Text, View , StyleSheet, Button } from "react-native";
+import {router} from "expo-router"
 
 const styles = StyleSheet.create({
   container:{
@@ -8,16 +9,18 @@ const styles = StyleSheet.create({
   },
   font:{
     color:'blue',
-    fontSize:50,
+    fontSize:20,
     fontWeight:'bold',
     fontStyle:'italic',
+    textAlign:'center',
   }
 });
 
 export default function Index() {
   return (
     <View style={[styles.container]}>
-      <Text style={[styles.font]}>This is the index page and im trying to make a react native app</Text>
+      <Text style={[styles.font]}>Index Screen</Text>
+      <Button title="Home" onPress={() => router.replace('/home')} />
     </View>
   );
 }
