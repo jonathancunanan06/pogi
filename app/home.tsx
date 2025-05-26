@@ -2,8 +2,8 @@ import {Text, View, StyleSheet, Pressable} from "react-native";
 import {router} from "expo-router";
 
 const styles = StyleSheet.create({
-  container:{
-    flex: 1,
+  container2:{
+    flex: 9,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -27,14 +27,28 @@ const styles = StyleSheet.create({
   title:{
     color:'white',
     textAlign:'center'
+  },
+  container1:{
+    flex:1,
+    justifyContent:'center',
+    alignItems:'center',
+    backgroundColor:'powderblue',
+  },
+  container:{
+    flex:1,
   }
+
 });
 
 export default function Home() {
     return(
-        <View style={[styles.container]}>
-            <Text style={[styles.font]}>Home Screen</Text>
-            <Pressable style={[styles.button]} onPress={() => router.replace('/')}><Text style={[styles.title]}>INDEX</Text></Pressable>
+      <View style={[styles.container]}>
+        <View style={[styles.container1]}>
+          <Text style={[styles.font]}>HOME</Text>
         </View>
+          <View style={[styles.container2]}>
+              <Pressable style={[styles.button]} onPress={() => router.replace('/')}><Text style={[styles.title]}>INDEX</Text></Pressable>
+          </View>
+      </View>
     );
 }
