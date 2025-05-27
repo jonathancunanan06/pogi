@@ -4,28 +4,48 @@ export const indexstyles = StyleSheet.create({
     container:{
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "center", 
+    backgroundColor:'#AAABBC'
   },
   container1:{
     width:'90%',
-    height:'50%',
+    height:'100%',
+    alignItems:'center',
   },
   descriptiontitle:{
     fontSize:24,
     fontWeight:'bold',
-    marginBottom:50,
+    marginBottom:10,
+    color:'#373F47',
+    letterSpacing:10,
   },
   description:{
+    color:'#373F47',
     marginBottom:'auto',
+    fontSize:12,
+    fontStyle:'italic',
+    width:'80%'
   },
   enter:{
     marginTop:'auto',
-    alignSelf:'flex-end',
-    backgroundColor:'powderblue',
-    padding:10,
+    marginBottom:'auto',
+    alignSelf:'center',
+    width:'50%',
+    padding:10, 
+    borderColor:'white',
+    borderWidth:1,
+    borderRadius:5,
   },
   entertext:{
      textAlign:'center',
+     fontSize:16,
+     color:'white',
+     letterSpacing:12,
+  },
+  logo:{
+    width:150,
+    height:150,
+    marginTop:'auto',
   }
 })
 

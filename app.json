@@ -35,6 +35,12 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+      "expo-asset",
+      {
+        "assets": "../assets/images/pogiicon_nobg.png"
+      }
       ]
     ],
     "experiments": {
