@@ -1,5 +1,6 @@
 {
   "expo": {
+    "permissions": ["public_profile", "email"],
     "name": "pogi",
     "slug": "pogi",
     "version": "1.0.0",

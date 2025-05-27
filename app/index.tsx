@@ -10,7 +10,7 @@ export default function Index() {
       <View style={[indexstyles.container1]}>
         <Image source={require('../assets/images/pogiicon_nobg.png')} style={[indexstyles.logo]}></Image>
         <Text style={[indexstyles.descriptiontitle]}>JNTHN CNNN</Text>
-        <Text style={[indexstyles.description]}>Welcome to our app ! I'm Jonathan Cunanan the creator. Have a great day.</Text>
+        <Text style={[indexstyles.description]}>Welcome to my app ! I'm Jonathan Cunanan the creator. Have a great day.</Text>
         <Pressable style={[indexstyles.enter]} onPress={() => router.replace('/home')} > 
           <Text style={[indexstyles.entertext]}>ENTER</Text>
         </Pressable> 
