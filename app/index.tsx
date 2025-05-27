@@ -1,26 +1,17 @@
-import { Text, View , StyleSheet, Button } from "react-native";
+import { Text, View , Pressable } from "react-native";
 import {router} from "expo-router"
-
-const styles = StyleSheet.create({
-  container:{
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  font:{
-    color:'blue',
-    fontSize:20,
-    fontWeight:'bold',
-    fontStyle:'italic',
-    textAlign:'center',
-  }
-});
+import {indexstyles} from "./style"
 
 export default function Index() {
   return (
-    <View style={[styles.container]}>
-      <Text style={[styles.font]}>Index Screen</Text>
-      <Button title="Home" onPress={() => router.replace('/home')} />
+    <View style={[indexstyles.container]}>
+      <View style={[indexstyles.container1]}>
+        <Text style={[indexstyles.descriptiontitle]}>JNTHN CNNN</Text>
+        <Text style={[indexstyles.description]}>Welcome to our app ! I'm Jonathan Cunanan the creator. Have a greate day.</Text>
+        <Pressable style={[indexstyles.enter]} onPress={() => router.replace('/home')} > 
+          <Text style={[indexstyles.entertext]}>ENTER</Text>
+        </Pressable> 
+      </View>
     </View>
   );
 }
